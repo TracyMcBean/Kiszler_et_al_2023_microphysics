@@ -11,8 +11,8 @@ import numpy as np
 
 # directory where the data is stored
 #datadir='../../../data/'
-datadir='/scratch/tkiszler/low_clouds_datasets/polar_night/'
-wrapper_dir = '/scratch/tkiszler/wrapper_output/'
+datadir='scratch/low_clouds_datasets/polar_night/'
+wrapper_dir = '/scratch/wrapper_output/'
 date = '202202'
 icon_version='v1'
 cloudsel_version='v6'
@@ -30,7 +30,7 @@ lev_idx = 111 # ~ 2537m
 # minimum number of timesteps in the dataset (10 min)
 ts_min = int(10*60/9)
 
-file_string = '/data/inscape/icon/experiments/nyalesund/testbed/icon_burga_'+icon_version+'/'+date+'*/cn_classification*.nc'
+file_string = '/icon_burga_'+icon_version+'/'+date+'*/cn_classification*.nc'
 for file in glob.glob(file_string):
 # loop over all files in the folder
 #for file in os.listdir('../../data/cloudnet_model/'):
