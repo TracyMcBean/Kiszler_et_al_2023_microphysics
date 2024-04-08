@@ -10,7 +10,7 @@ import glob
 import numpy as np
 
 # directory where the data is stored
-#datadir='../../../data/'
+
 datadir='scratch/low_clouds_datasets/polar_night/'
 wrapper_dir = '/scratch/wrapper_output/'
 date = '202202'
